@@ -88,65 +88,162 @@
     </header>
 
 
-<!-- Nueva Sección: Instalación de Odoo en Ubuntu -->
-<section id="install-odoo" class="installation-section">
-    <div class="container">
-        <h2>Instalación de Odoo en Ubuntu</h2>
-        <p>A continuación, te mostramos cómo instalar Odoo en tu sistema operativo Ubuntu paso a paso.</p>
-        <ol>
-            <li><b>Actualizar el sistema:</b>
-                <pre>sudo apt update </pre>
-            </li>
-            <li><b>Instalar dependencias requeridas:</b>
-                <pre>dpkg -i ../Descargas/odoo_18.0.latest_all.deb                </pre>
-                <pre> sudo apt-get install -f                </pre>
-                <pre> sudo dpkg -i ../Descargas/odoo_18.0.latest_all.deb</pre>
-            </li>
-            
-            <li><b>Comprobar version Odoo</b>
-                <pre>odoo --version</pre>
-            </li>
-            <li><b>Acceder a Odoo:</b> Abre un navegador web y ve a <a href="http://localhost:8069">http://localhost:8069</a>.</li>
-        </ol>
-    </div>
-</section>
+    <!-- Nueva Sección: Instalación de Odoo en Ubuntu -->
+    <section id="install-odoo" class="installation-section">
+        <div class="container">
+            <h2>Instalación de Odoo en Ubuntu</h2> <br />
+            <p>A continuación, te mostramos cómo instalar Odoo en tu sistema operativo Ubuntu paso a paso.</p> <br />
+            <ol>
+                <li><b>Actualizar el sistema:</b>
+                    <pre>sudo apt update </pre>
+                </li>
+                <li><b>Instalar dependencias requeridas:</b>
+                    <pre>dpkg -i ../Descargas/odoo_18.0.latest_all.deb
+sudo apt-get install -f
+sudo dpkg -i ../Descargas/odoo_18.0.latest_all.deb</pre>
+                </li>
 
-<!-- Nueva Sección: Cambios Realizados -->
-<section id="odoo-changes" class="changes-section">
-    <div class="container">
-        <h2>Cambios Realizados en Odoo</h2>
-        <p>En esta sección se describen los cambios implementados en la aplicación Odoo.</p>
+                <li><b>Comprobar version Odoo</b>
+                    <pre>odoo --version</pre>
+                </li>
+                <li><b>Acceder a Odoo:</b> Abre un navegador web y ve a <a
+                        href="http://localhost:8069">http://localhost:8069</a>.</li> <br />
+            </ol>
+        </div>
+    </section>
 
-        <h3>1. Crear Productos</h3>
-        <p>Se han añadido producto a través del módulo de Inventario:</p>
-        <ol>
-            <li>
-                Aquí se puede observar todos los productos realizados
-                <img src="assets/images/productos.png" alt="Productos" style="display: block; margin-top: 10px;">
-            </li>
-            <li>
-                Este es uno de los ejemplos de la información con la que se rellena el producto
-                <img src="assets/images/ejemploProducto.png" alt="Ejemplo Producto" style="display: block; margin-top: 10px;">
-            </li>
-        </ol>
-        
+    <!-- Nueva Sección: Cambios Realizados -->
+    <section id="odoo-changes" class="changes-section">
+        <div class="container">
+            <h2>Cambios Realizados en Odoo</h2> <br />
+            <p>En esta sección se describen los cambios implementados en la aplicación Odoo.</p> <br />
 
-        <h3>2. Añadir Trabajadores</h3>
-        <p>Se han registrado empleados en el módulo de Empleados:</p>
-        <ul>
-            
-        </ul>
+            <h5>Primero empezaremos mostrando los cambios que hicimos en el módulo de Inventario/Ventas en el apartado de Productos para insertar los productos deseados para nuestra empresa.</h5> <br />
 
-        <h3>3. Otros Cambios</h3>
-        <p>Hemos añadido proveedores en el módulo de Compras</p>
-        <ul>
-            
-        </ul>
-    </div>
-</section>
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#productos">1. Tutorial de nuestros productos</button>
 
+            <div class="modal fade" id="productos" data-bs-backdrop="static">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <!-- cabecera del diálogo -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Productos</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- cuerpo del diálogo -->
+                        <div class="modal-body">
+                            <h3>Crear Productos</h3> <br />
+                            <ol>
+                                <li>
+                                    <p>Aquí se pueden observar todos los productos insertados en nuestra empresa:</p>
+                                    <img src="assets/images/productos.png" alt="Productos"
+                                        style="display: block; margin-top: 10px;">
+                                </li>
+                                <li>
+                                    <p>En el caso de que quisiésemos realizar un nuevo producto tendríamos que darle click al botón en la esquina superior izquierda en el que pone "Nuevo", y se nos abrirá la ventana mostrada en la siguiente imagen:</p>
+                                    <img src="assets/images/ejemploProducto.png" alt="Ejemplo Producto"
+                                        style="display: block; margin-top: 10px;">
+                                    <p>Aquí, como haremos en el resto de módulos, rellenamos la información que veamos conveniente, en nuestro caso ponemos el nombre del producto junto con una foto para identificarlo fácilmente, asignamos un número de unidades que tendremos del producto junto con un precio por unidad. </p><br />
+                                    <p>Para más dinamismo le podemos dar a nuestros productos una categoría para poder filtrar los productos en base a ella para que así sea más fácil de encontrar el producto, para lo cual también podemos indicar si el producto es un bien, un servicio o una combinación de sendas.</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <!-- pie del diálogo -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <br />
 
+            <h5>Ahora mostraremos los cambios que hicimos en el módulo de Empleados para asginar a los empleados de nuestra empresa.</h5> <br />
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#empleados">2. Tutorial de nuestros empleados</button>
+
+            <div class="modal fade" id="empleados" data-bs-backdrop="static">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <!-- cabecera del diálogo -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Empleados</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- cuerpo del diálogo -->
+                        <div class="modal-body">
+                            <h3>Crear Empleados</h3> <br />
+                            <ol>
+                                <li>
+                                    <p>Aquí se pueden observar todos los empleados creados en nuestra empresa:</p>
+                                    <img src="assets/images/empleados.png" alt="Empleados"
+                                        style="display: block; margin-top: 10px;">
+                                </li>
+                                <li>
+                                    <p>En el caso de que quisiésemos realizar un nuevo empleado tendríamos que hacer lo mismo que hicimos con los productos, darle click al botón en la esquina superior izquierda en el que pone "Nuevo", y se nos abrirá la ventana mostrada en la siguiente imagen:</p>
+                                    <img src="assets/images/ejemploEmpleado.png" alt="Ejemplo Empleado"
+                                        style="display: block; margin-top: 10px;">
+                                    <p>Aquí, en nuestro caso, ponemos el nombre del empleado junto con una foto para identificarlo fácilmente, escribimos su correo electrónico y el departamento y puesto de trabajo en el que va a trabajar.</p>
+                                    <br />
+                                    <p>Después le asignamos un gerente y un mentor, que coincidirá con el jefe del empleado. Esto hará que en el organigrama que nos proporciona Odoo de nuestros empleados podamos ver quién es el jefe de un empleado y de quién es jefe un empleado.</p>
+                                    <br />
+                                    <p>Para acceder al organigrama de los empleados tenemos dos opciones:</p>
+                                    <p>1. Podemos darle dentro del módulo al apartado de la barra superior en el que pone "Empleados" y le damos al botón del dropdown que dice "Organigrama".</p>
+                                    <p>2. Dentro de un empleado de nuestra empresa le damos al botón que hay arriba en el centro que pone "Organigrama", y nos llevará al organigrama desde el empleado del que hemos accedido.</p>
+                                    <img src="assets/images/organigrama.png" alt="Organigrama"
+                                        style="display: block; margin-top: 10px;">
+                                </li>
+                            </ol>
+                        </div>
+                        <!-- pie del diálogo -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <br />
+
+            <h5>Tras acabar con los empleados mostraremos los cambios que hicimos en el módulo de Compras para asginar a los proveedores de nuestra empresa.</h5> <br />
+
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#proveedores">3. Tutorial de nuestros proveedores</button>
+
+            <div class="modal fade" id="proveedores" data-bs-backdrop="static">
+                <div class="modal-dialog modal-lg modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <!-- cabecera del diálogo -->
+                        <div class="modal-header">
+                            <h5 class="modal-title">Proveedores</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                        </div>
+                        <!-- cuerpo del diálogo -->
+                        <div class="modal-body">
+                            <h3>Crear Proveedores</h3> <br />
+                            <ol>
+                                <li>
+                                    <p>Aquí se pueden observar todos los proveedores con los que contará nuestra empresa:</p>
+                                    <img src="assets/images/proveedores.png" alt="Proveedores"
+                                        style="display: block; margin-top: 10px;">
+                                </li>
+                                <li>
+                                    <p>Como en los dos anteriores casos, si quisiéramos realizar un nuevo proveedor tendríamos que hacer lo mismo que hicimos con los productos y los empleados, darle click al botón en la esquina superior izquierda en el que pone "Nuevo", y se nos abrirá la ventana mostrada en la siguiente imagen:</p>
+                                    <img src="assets/images/ejemploProveedor.png" alt="Ejemplo Proveedor"
+                                        style="display: block; margin-top: 10px;">
+                                    <p>Rellenamos la información que veamos conveniente, en nuestro caso ponemos el nombre del proveedor junto con una foto para encontrarlo espontáneamente; introducimos su correo electrónico, número de teléfono de contacto, la dirección del proveedor y su página web en caso de que tenga o que se vea conveniente agregarla. </p><br />
+                                    <p>Al igual que con los productos, los proveedores tienen un campo llamado "Etiquetas" que podemos usar para asignarle etiquetas a los proveedores para así meterlos en grupos más pequeños y así encontrarlos a partir de filtros.</p>
+                                </li>
+                            </ol>
+                        </div>
+                        <!-- pie del diálogo -->
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Start Footer Area -->
     <footer class="footer">
@@ -160,7 +257,8 @@
                             <div class="logo">
                                 <a href="index.html"><img src="assets/images/logo.svg" alt="#"></a>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry.</p>
+                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry.</p>
                             <div class="footer-social">
                                 <ul>
                                     <li><a href="#"><i class="lni lni-facebook-filled"></i></a></li>
@@ -197,10 +295,12 @@
                                     <p>Untrammelled & nothing preven our being able</p>
                                     <ul class="footer-contact">
                                         <li><i class="lni lni-phone"></i> <a href="#">+34 666 777 555</a></li>
-                                        <li><i class="lni lni-envelope"></i> <a href="mailto:daniel.maguesin.perez.alu@iesjulioverne.es">
-                                            support</a></li>
-                                        <li><i class="lni lni-map-marker"></i> <a href="https://www.google.es/maps/place/Castillo+de+Vejer/@36.2509155,-5.9708958,15.75z/data=!4m6!3m5!1s0xd0c45c84b3d9cb1:0x94f33c5395f7c659!8m2!3d36.2527319!4d-5.9637791!16s%2Fg%2F11b806mpd9?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
-                                            Vejer de la frontera</a></li>
+                                        <li><i class="lni lni-envelope"></i> <a
+                                                href="mailto:daniel.maguesin.perez.alu@iesjulioverne.es">
+                                                support</a></li>
+                                        <li><i class="lni lni-map-marker"></i> <a
+                                                href="https://www.google.es/maps/place/Castillo+de+Vejer/@36.2509155,-5.9708958,15.75z/data=!4m6!3m5!1s0xd0c45c84b3d9cb1:0x94f33c5395f7c659!8m2!3d36.2527319!4d-5.9637791!16s%2Fg%2F11b806mpd9?entry=ttu&g_ep=EgoyMDI0MTEyNC4xIKXMDSoASAFQAw%3D%3D">
+                                                Vejer de la frontera</a></li>
                                         <li><i class="lni lni-world"></i> <a href="#">www.yoursite.com</a></li>
                                     </ul>
                                 </div>
@@ -213,12 +313,18 @@
                         <div class="single-footer gallery">
                             <h3>Instagram Feed</h3>
                             <ul class="list">
-                                <li><a href="#"><img src="assets/images/cibao.jpeg" alt="#"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/cadizCF.jpg" alt="#"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/betisVisitante.jpg" alt="#"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/camisetaBarsa.jpg" alt="#"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/realMadrid.jpg" alt="#"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/Xbuyer.jpg" alt="#"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/cibao.jpeg" alt="#"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/cadizCF.jpg" alt="#"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/betisVisitante.jpg" alt="#"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/camisetaBarsa.jpg" alt="#"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/realMadrid.jpg" alt="#"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/Xbuyer.jpg" alt="#"><i
+                                            class="lni lni-instagram"></i></a></li>
                             </ul>
                         </div>
                         <!-- End Single Widget -->
@@ -234,7 +340,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="left">
-                                <p>Designed and Developed by<a href="https://graygrids.com/" rel="nofollow" target="_blank">GrayGrids</a></p>
+                                <p>Designed and Developed by<a href="https://graygrids.com/" rel="nofollow"
+                                        target="_blank">GrayGrids</a></p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12">
@@ -248,7 +355,7 @@
         </div>
         <!-- End Footer Middle -->
     </footer>
-    <!--/ End Footer Area --> 
+    <!--/ End Footer Area -->
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top btn-hover">
