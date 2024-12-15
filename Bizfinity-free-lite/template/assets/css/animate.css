@@ -3172,3 +3172,29 @@
   -webkit-animation-name: zoomOutUp;
   animation-name: zoomOutUp;
 }
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; /* Reduce el ancho del área clicable */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: black; /* Cambia el color de las flechas a negro */
+    border-radius: 50%; /* Añade un borde redondeado */
+    width: 40px; /* Ajusta el tamaño de las flechas */
+    height: 40px;
+}
+
+.carousel-control-prev {
+    left: -50px; /* Mueve la flecha izquierda hacia el borde extremo */
+}
+
+.carousel-control-next {
+    right: -50px; /* Mueve la flecha derecha hacia el borde extremo */
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    background-color: #333; /* Un negro más claro al pasar el cursor */
+}

@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
 
 </head>
 
@@ -49,15 +50,17 @@
 
     <!-- ========================= header start ========================= -->
     <header class="header navbar-area">
-
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-12">
                     <div class="nav-inner">
                         <nav class="navbar navbar-expand-lg">
+                            <!-- Logo -->
                             <a class="navbar-brand" href="index.html">
-                                <img src="assets/images/iconoBootStrap.png" alt="">
+                                <img src="assets/images/iconoBootStrap.png" alt="Logo" class="logo">
                             </a>
+    
+                            <!-- Mobile Menu Toggle -->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                 aria-expanded="false" aria-label="Toggle navigation">
@@ -65,36 +68,44 @@
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                             </button>
+    
+                            <!-- Navigation Menu -->
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="index.html">Home</a>
+                                        <a class="page-scroll " href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll active" href="daily.html">DAILY</a>
+                                        <a class="page-scroll active" href="daily.html">Daily</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="bootstrap.html">CambiosBootstrap</a>
+                                        <a class="page-scroll" href="bootstrap.html">Bootstrap</a>
+                                    </li>
+                                    <li class="nav-item dropdown">
+                                        <a class="page-scroll dropdown-toggle" href="#" id="odooDropdown" role="button"
+                                            data-bs-toggle="dropdown" aria-expanded="false">Odoo Manual</a>
+                                        <ul class="dropdown-menu" aria-labelledby="odooDropdown">
+                                            <li><a class="dropdown-item" href="odoo-installation.html">Instalación</a></li>
+                                            <li><a class="dropdown-item" href="odoo-clients.html">Clientes</a></li>
+                                        </ul>
                                     </li>
                                     <li class="nav-item">
-                                        <a class="page-scroll" href="odoo.html">Manual Odoo</a>
-                                    </li>
-                                    <li class="nav-item">
-                                        <a class="page-scroll" href="aboutUs.html">About us</a>
+                                        <a class="page-scroll" href="aboutUs.html">About Us</a>
                                     </li>
                                 </ul>
-                            </div> <!-- navbar collapse -->
-                            <div class="button">
-                                <a href="javascript:void(0)" class="btn white-bg mouse-dir">Get a Quote <span
-                                        class="dir-part"></span></a>
                             </div>
-                        </nav> <!-- navbar -->
+    
+                            <!-- Call to Action Button -->
+                            <div class="button">
+                                <a href="#quote" class="btn btn-primary white-bg mouse-dir">Get a Quote <span class="dir-part"></span></a>
+                            </div>
+                        </nav>
                     </div>
                 </div>
-            </div> <!-- row -->
-        </div> <!-- container -->
-
+            </div>
+        </div>
     </header>
+    
     <!-- ========================= header end ========================= -->
     <!-- Start Service Area -->
     <section class="services section">
