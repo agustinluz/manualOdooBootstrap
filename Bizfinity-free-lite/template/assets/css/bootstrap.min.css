@@ -11581,4 +11581,9 @@ fieldset:disabled .btn {
     }
 }
 
+.fondo {
+    background-color: black;
+    color: white;
+}
+
 /*# sourceMappingURL=bootstrap.min.css.map */

@@ -51,7 +51,7 @@
                             <a class="navbar-brand" href="index.html">
                                 <img src="assets/images/iconoBootStrap.png" alt="Logo" class="logo">
                             </a>
-    
+
                             <!-- Mobile Menu Toggle -->
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -60,7 +60,7 @@
                                 <span class="toggler-icon"></span>
                                 <span class="toggler-icon"></span>
                             </button>
-    
+
                             <!-- Navigation Menu -->
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
@@ -81,16 +81,67 @@
                                     </li>
                                 </ul>
                             </div>
-                            <div class="button">
-                                <a href="contacto.html" class="btn btn-primary white-bg mouse-dir">Contáctanos <span class="dir-part"></span></a>
-                            </div>
                         </nav>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    
+
+    <div class="container">
+
+        <div id="antesDesp" class="carousel slide" data-bs-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-bs-target="#antesDesp" data-bs-slide-to="0" class="active"></li>
+                <li data-bs-target="#antesDesp" data-bs-slide-to="1"></li>
+                <li data-bs-target="#antesDesp" data-bs-slide-to="2"></li>
+            </ol>
+            <!-- diapositivas -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/antes1.png">
+                    <img class="d-block w-100" src="assets/images/despues1.png">
+                    <div class="carousel-caption">
+                        <h3 class="fondo">Cambios en el index.html</h3>
+                        <p class="fondo">Realizamos cambios en el slider que venía por defecto en la plantilla para usarlo para navegar por la página.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/antes2.png">
+                    <img class="d-block w-100" src="assets/images/despues2.png">
+                    <div class="carousel-caption">
+                        <h3 class="fondo">Cambios en el aboutUs.html</h3>
+                        <p class="fondo">Aquí hemos modificado la información que venía introducida por defecto para hablar un poco sobre nosotros, nuestro objetivo y sobre qué vas a encontrar a la hora de visitar esta página.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/antes3.png">
+                    <img class="d-block w-100" src="assets/images/despues3.png">
+                    <div class="carousel-caption">
+                        <h3 class="fondo">Cambios en el footer</h3>
+                        <p class="fondo">Cambiamos las imágenes que venían por defecto en la plantilla para así poner enlaces directos a las páginas oficiales de nuestros proveedores de nuestra empresa de Odoo.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- botones de desplazamiento a izquierda y derecha -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#antesDesp" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#antesDesp" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+
+        <br /> <h3>Otros cambios</h3> <br />
+
+        <p>También se ha modificado el css para modificar la clase "table-striped" para ajustar los colores que venían por defecto en la clase y asemejarlos a los colores de la página como se puede ver en la siguiente imagen:</p>
+
+        <img src="assets/images/tablaDaily.png">
+
+        <p>Además, también se ha añadido una nueva clase en el css para poner color de fondo y color a la fuente de la letra al párrafo donde vienen explicados los cambios realizados en la plantilla original.</p> <br />
+    </div>
 
     <footer class="footer">
         <!-- Start Footer Middle -->
@@ -105,13 +156,18 @@
                                     <img src="assets/images/iconoBootStrap.png" alt="Logo">
                                 </a>
                             </div>
-                            <p>Somos dos estudiantes de DAM apasionados por el desarrollo de software y el diseño web. Este proyecto refleja nuestro aprendizaje y dedicación en cada detalle.</p>
+                            <p>Somos dos estudiantes de DAM apasionados por el desarrollo de software y el diseño web.
+                                Este proyecto refleja nuestro aprendizaje y dedicación en cada detalle.</p>
                             <div class="footer-social">
                                 <ul>
-                                    <li><a href="#" aria-label="Facebook"><i class="lni lni-facebook-filled"></i></a></li>
-                                    <li><a href="#" aria-label="Twitter"><i class="lni lni-twitter-original"></i></a></li>
-                                    <li><a href="#" aria-label="LinkedIn"><i class="lni lni-linkedin-original"></i></a></li>
-                                    <li><a href="#" aria-label="Behance"><i class="lni lni-behance-original"></i></a></li>
+                                    <li><a href="#" aria-label="Facebook"><i class="lni lni-facebook-filled"></i></a>
+                                    </li>
+                                    <li><a href="#" aria-label="Twitter"><i class="lni lni-twitter-original"></i></a>
+                                    </li>
+                                    <li><a href="#" aria-label="LinkedIn"><i class="lni lni-linkedin-original"></i></a>
+                                    </li>
+                                    <li><a href="#" aria-label="Behance"><i class="lni lni-behance-original"></i></a>
+                                    </li>
                                     <li><a href="#" aria-label="Dribbble"><i class="lni lni-dribbble"></i></a></li>
                                 </ul>
                             </div>
@@ -140,8 +196,12 @@
                                     <h3>Contáctanos</h3>
                                     <ul class="footer-contact">
                                         <li><i class="lni lni-phone"></i> <a href="#">+34 666 777 555</a></li>
-                                        <li><i class="lni lni-envelope"></i> <a href="mailto:daniel.maguesin.perez.alu@iesjulioverne.es">support@yourmail.com</a></li>
-                                        <li><i class="lni lni-map-marker"></i> <a href="https://www.google.es/maps/place/Castillo+de+Vejer/">Vejer de la Frontera</a></li>
+                                        <li><i class="lni lni-envelope"></i> <a
+                                                href="mailto:daniel.maguesin.perez.alu@iesjulioverne.es">support@yourmail.com</a>
+                                        </li>
+                                        <li><i class="lni lni-map-marker"></i> <a
+                                                href="https://www.google.es/maps/place/Castillo+de+Vejer/">Vejer de la
+                                                Frontera</a></li>
                                         <li><i class="lni lni-world"></i> <a href="#">www.yoursite.com</a></li>
                                     </ul>
                                 </div>
@@ -155,12 +215,18 @@
                         <div class="single-footer gallery">
                             <h3>Instagram</h3>
                             <ul class="list">
-                                <li><a href="#"><img src="assets/images/cibao.jpeg" alt="Cibao"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/cadizCF.jpg" alt="Cádiz CF"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/betisVisitante.jpg" alt="Betis"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/camisetaBarsa.jpg" alt="Barcelona"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/realMadrid.jpg" alt="Real Madrid"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#"><img src="assets/images/malaga.png" alt="Málaga"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/cibao.jpeg" alt="Cibao"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/cadizCF.jpg" alt="Cádiz CF"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/betisVisitante.jpg" alt="Betis"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/camisetaBarsa.jpg" alt="Barcelona"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/realMadrid.jpg" alt="Real Madrid"><i
+                                            class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/malaga.png" alt="Málaga"><i
+                                            class="lni lni-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -177,7 +243,8 @@
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-12">
                             <div class="left">
-                                <p>Designed and Developed by <a href="https://www.instagram.com/new.danielmp_05/" rel="nofollow" target="_blank">Daniel Maguesin</a></p>
+                                <p>Designed and Developed by <a href="https://www.instagram.com/new.danielmp_05/"
+                                        rel="nofollow" target="_blank">Daniel Maguesin</a></p>
                             </div>
                         </div>
                         <div class="col-lg-6 col-md-6 col-12 text-right">
@@ -192,7 +259,7 @@
         <!-- End Footer Bottom -->
     </footer>
 
- 
+
 
     <!-- ========================= scroll-top ========================= -->
     <a href="#" class="scroll-top btn-hover">
