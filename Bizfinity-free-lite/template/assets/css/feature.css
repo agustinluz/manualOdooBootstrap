@@ -1,0 +1,91 @@
+/* Features Section */
+.features {
+    padding: 50px 0;
+    background-color: #f9f9f9;
+}
+
+.feature-video {
+    margin-bottom: 30px;
+}
+
+.feature-video .video-head {
+    position: relative;
+}
+
+.feature-video .video-head a {
+    display: inline-block;
+    background-color: #FF5722;
+    color: white;
+    font-size: 2.5rem;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.feature-video .video-head a:hover {
+    transform: scale(1.1);
+    background-color: #E64A19;
+}
+
+.feature-video p {
+    margin-top: 15px;
+    font-size: 1.1rem;
+    color: #666;
+}
+
+/* Text Content */
+.feature-content h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.feature-content p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Feature Items */
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.feature-item i {
+    font-size: 2.5rem;
+    color: #FF5722;
+    flex-shrink: 0;
+}
+
+.feature-item h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.feature-item p {
+    margin: 0;
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .feature-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .feature-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .feature-item p {
+        font-size: 0.95rem;
+    }
+}

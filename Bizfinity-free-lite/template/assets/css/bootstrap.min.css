@@ -1995,8 +1995,8 @@ progress {
 
 .table {
     --bs-table-bg: transparent;
-    --bs-table-striped-color: #212529;
-    --bs-table-striped-bg: rgba(0, 0, 0, 0.05);
+    --bs-table-striped-color: #1b3a5c;
+    --bs-table-striped-bg: rgba(0, 33, 124, 0.418);
     --bs-table-active-color: #212529;
     --bs-table-active-bg: rgba(0, 0, 0, 0.1);
     --bs-table-hover-color: #212529;
@@ -11579,6 +11579,11 @@ fieldset:disabled .btn {
     .d-print-none {
         display: none !important
     }
+}
+
+.fondo {
+    background-color: black;
+    color: white;
 }
 
 /*# sourceMappingURL=bootstrap.min.css.map */

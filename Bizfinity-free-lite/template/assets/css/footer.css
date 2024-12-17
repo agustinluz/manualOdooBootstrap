@@ -1,0 +1,135 @@
+/* Footer Middle Styles */
+.footer-middle {
+    background-color: #2C3E50;
+    color: white;
+    padding: 50px 0;
+}
+
+.footer-middle .logo img {
+    max-width: 100px;
+    margin-bottom: 20px;
+}
+
+.footer-middle p {
+    margin-bottom: 20px;
+    line-height: 1.8;
+}
+
+.footer-social ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.footer-social ul li a {
+    color: white;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+}
+
+.footer-social ul li a:hover {
+    color: #FFD700;
+}
+
+/* Links Section */
+.single-footer h3 {
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.single-footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.single-footer ul li {
+    margin-bottom: 10px;
+}
+
+.single-footer ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.single-footer ul li a:hover {
+    color: #FFD700;
+}
+
+/* Contact Section */
+.footer-contact li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.footer-contact li i {
+    color: #FFD700;
+    margin-right: 10px;
+}
+
+/* Instagram Section */
+.gallery h3 {
+    color: #FFD700;
+    margin-bottom: 15px;
+}
+
+.gallery ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+.gallery ul li {
+    position: relative;
+}
+
+.gallery ul li img {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.gallery ul li img:hover {
+    transform: scale(1.1);
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+    background-color: #1A252F;
+    color: white;
+    padding: 20px 0;
+    font-size: 0.9rem;
+}
+
+.footer-bottom .left {
+    text-align: left;
+}
+
+.footer-bottom .right {
+    text-align: right;
+}
+
+.footer-bottom a {
+    color: #FFD700;
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    .footer-bottom .left, .footer-bottom .right {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+}
+
+

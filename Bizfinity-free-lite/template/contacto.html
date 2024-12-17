@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="assets/css/contacto.css">
+    <link rel="stylesheet" href="assets/css/LineIcons.2.0.css">
+
+</head>
+<body>
+    <!-- Header -->
+    <header class="header navbar-area">
+        <!-- Puedes incluir aquí el header de tu proyecto -->
+    </header>
+    <div class="back-to-home">
+        <a href="index.html" class="btn btn-primary">
+            <i class="lni lni-arrow-left"></i> Volver al Inicio
+        </a>
+    </div>
+    
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="row">
+                <!-- Contact Information -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact-info">
+                        <h2>Contáctanos</h2>
+                        <p>Si tienes alguna consulta o necesitas más información sobre nuestro proyecto, no dudes en escribirnos.</p>
+                        <ul class="contact-list">
+                            <li>
+                                <i class="lni lni-phone"></i>
+                                <span>Teléfono:</span>
+                                <a href="tel:+34666777555">+34 666 777 555</a>
+                            </li>
+                            <li>
+                                <i class="lni lni-envelope"></i>
+                                <span>Correo:</span>
+                                <a href="mailto:daniel.maguesin.perez.alu@iesjulioverne.es">daniel.maguesin.perez.alu@iesjulioverne.es</a>
+                            </li>
+                            <li>
+                                <i class="lni lni-map-marker"></i>
+                                <span>Ubicación:</span>
+                                <p>Vejer de la Frontera, Cádiz, España</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="col-lg-6 col-md-12">
+                    <div class="contact-form">
+                        <h2>Envíanos un mensaje</h2>
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" name="name" id="name" placeholder="Tu Nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="Tu Correo Electrónico" required>
+                            </div>
+                            <div class="form-group">
+                                <textarea name="message" id="message" rows="5" placeholder="Tu Mensaje" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                            </div>
+                            <div id="formResponse" class="form-response"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="scriptContac.js"></script>
+</body>
+</html>
