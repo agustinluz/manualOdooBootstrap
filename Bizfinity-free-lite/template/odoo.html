@@ -24,7 +24,7 @@
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="stylesheet" href="assets/css/reset.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
-    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/footer.css" />
 
 </head>
 
@@ -63,7 +63,7 @@
                             <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                                 <ul id="nav" class="navbar-nav ms-auto">
                                     <li class="nav-item">
-                                        <a class="page-scroll active" href="index.html">Home</a>
+                                        <a class="page-scroll" href="index.html">Home</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="daily.html">Daily</a>
@@ -71,13 +71,8 @@
                                     <li class="nav-item">
                                         <a class="page-scroll" href="bootstrap.html">Bootstrap</a>
                                     </li>
-                                    <li class="nav-item dropdown">
-                                        <a class="page-scroll dropdown-toggle" href="#" id="odooDropdown" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">Odoo Manual</a>
-                                        <ul class="dropdown-menu" aria-labelledby="odooDropdown">
-                                            <li><a class="dropdown-item" href="odoo-installation.html">Instalación</a></li>
-                                            <li><a class="dropdown-item" href="odoo-clients.html">Clientes</a></li>
-                                        </ul>
+                                    <li class="nav-item">
+                                        <a class="page-scroll active" href="odoo.html">Odoo Manual</a>
                                     </li>
                                     <li class="nav-item">
                                         <a class="page-scroll" href="aboutUs.html">About Us</a>
@@ -169,7 +164,7 @@
     
     <!-- Modal Cambios -->
     <div class="modal fade" id="modalCambios" tabindex="-1" aria-labelledby="modalCambiosLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-lg modal-dialog-scrollable">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="modalCambiosLabel">Cambios Realizados en Odoo</h5>
@@ -177,14 +172,87 @@
                 </div>
                 <div class="modal-body">
                     <h3>Productos</h3>
-                    <p>Detalles sobre los cambios realizados en el módulo de Productos.</p>
-                    <img src="assets/images/productos.png" alt="Productos" class="img-fluid mb-3">
-                    <h3>Empleados</h3>
-                    <p>Detalles sobre los cambios realizados en el módulo de Empleados.</p>
-                    <img src="assets/images/empleados.png" alt="Empleados" class="img-fluid mb-3">
-                    <h3>Proveedores</h3>
-                    <p>Detalles sobre los cambios realizados en el módulo de Proveedores.</p>
-                    <img src="assets/images/proveedores.png" alt="Proveedores" class="img-fluid mb-3">
+                    <ol>
+                        <li>
+                            <p>Aquí se pueden observar todos los productos insertados en nuestra empresa:</p>
+                            <img src="assets/images/productos.png" alt="Productos"
+                                style="display: block; margin-top: 10px;">
+                        </li>
+                        <li>
+                            <p>En el caso de que quisiésemos realizar un nuevo producto tendríamos que darle click al botón en la esquina superior izquierda en el que pone "Nuevo", y se nos abrirá la ventana mostrada en la siguiente imagen:</p>
+                            <img src="assets/images/ejemploProducto.png" alt="Ejemplo Producto"
+                                style="display: block; margin-top: 10px;">
+                            <p>Aquí, como haremos en el resto de módulos, rellenamos la información que veamos conveniente, en nuestro caso ponemos el nombre del producto junto con una foto para identificarlo fácilmente, asignamos un número de unidades que tendremos del producto junto con un precio por unidad. </p><br />
+                            <p>Para más dinamismo le podemos dar a nuestros productos una categoría para poder filtrar los productos en base a ella para que así sea más fácil de encontrar el producto, para lo cual también podemos indicar si el producto es un bien, un servicio o una combinación de sendas.</p>
+                        </li>
+                    </ol>
+                    <br /> <h3>Empleados</h3>
+                    <ol>
+                        <li>
+                            <p>Aquí se pueden observar todos los empleados creados en nuestra empresa:</p>
+                            <img src="assets/images/empleados.png" alt="Empleados"
+                                style="display: block; margin-top: 10px;">
+                        </li>
+                        <li>
+                            <p>En el caso de que quisiésemos realizar un nuevo empleado tendríamos que hacer lo mismo que hicimos con los productos, darle click al botón en la esquina superior izquierda en el que pone "Nuevo", y se nos abrirá la ventana mostrada en la siguiente imagen:</p>
+                            <img src="assets/images/ejemploEmpleado.png" alt="Ejemplo Empleado"
+                                style="display: block; margin-top: 10px;">
+                            <p>Aquí, en nuestro caso, ponemos el nombre del empleado junto con una foto para identificarlo fácilmente, escribimos su correo electrónico y el departamento y puesto de trabajo en el que va a trabajar.</p>
+                            <br />
+                            <p>Después le asignamos un gerente y un mentor, que coincidirá con el jefe del empleado. Esto hará que en el organigrama que nos proporciona Odoo de nuestros empleados podamos ver quién es el jefe de un empleado y de quién es jefe un empleado.</p>
+                            <br />
+                            <p>Para acceder al organigrama de los empleados tenemos dos opciones:</p>
+                            <p>1. Podemos darle dentro del módulo al apartado de la barra superior en el que pone "Empleados" y le damos al botón del dropdown que dice "Organigrama".</p>
+                            <p>2. Dentro de un empleado de nuestra empresa le damos al botón que hay arriba en el centro que pone "Organigrama", y nos llevará al organigrama desde el empleado del que hemos accedido.</p>
+                            <img src="assets/images/organigrama.png" alt="Organigrama"
+                                style="display: block; margin-top: 10px;">
+                        </li>
+                    </ol>
+                    <br /> <h3>Proveedores</h3>
+                    <ol>
+                        <li>
+                            <p>Aquí se pueden observar todos los proveedores con los que contará nuestra empresa:</p>
+                            <img src="assets/images/proveedores.png" alt="Proveedores"
+                                style="display: block; margin-top: 10px;">
+                        </li>
+                        <li>
+                            <p>Como en los dos anteriores casos, si quisiéramos realizar un nuevo proveedor tendríamos que hacer lo mismo que hicimos con los productos y los empleados, darle click al botón en la esquina superior izquierda en el que pone "Nuevo", y se nos abrirá la ventana mostrada en la siguiente imagen:</p>
+                            <img src="assets/images/ejemploProveedor.png" alt="Ejemplo Proveedor"
+                                style="display: block; margin-top: 10px;">
+                            <p>Rellenamos la información que veamos conveniente, en nuestro caso ponemos el nombre del proveedor junto con una foto para encontrarlo espontáneamente; introducimos su correo electrónico, número de teléfono de contacto, la dirección del proveedor y su página web en caso de que tenga o que se vea conveniente agregarla. </p><br />
+                            <p>Al igual que con los productos, los proveedores tienen un campo llamado "Etiquetas" que podemos usar para asignarle etiquetas a los proveedores para así meterlos en grupos más pequeños y así encontrarlos a partir de filtros.</p>
+                        </li>
+                    </ol>
+                    <br /> <h3>Punto de Venta</h3>
+                    <ol>
+                        <li>
+                            <p>Para hacer nuestro punto de venta primero tenemos que decidir que tipo de tienda vamos a escoger, y en nuestro caso, escogeremos un restaurante:</p>
+                            <img src="assets/imageneTPV/paso1.png" alt="Elegir tienda"
+                                style="display: block; margin-top: 10px;">
+                        </li>
+                        <li>
+                            <p>Tras haber elegido restaurante proseguimos creando los productos que vamos a vender en nuestro restaurante, que son los siguientes:</p>
+                            <img src="assets/imageneTPV/productostpv.png" alt="Productos TPV"
+                                style="display: block; margin-top: 10px;">
+                        </li>
+                        <li>
+                            <p>Tras tener nuestros productos listos, proseguimos abriendo la caja registradora para registrar los pedidos de nuestros clientes:</p>
+                            <img src="assets/imageneTPV/paso2.png" alt="Abrir caja registradora"
+                                style="display: block; margin-top: 10px;">
+                        </li>
+                        <li>
+                            <p>Aquí se muestran las mesas que tiene nuestro restaurante, y en la que se indican el número de platos principales que los clientes han pedido:</p>
+                            <img src="assets/imageneTPV/mesatpv.png" alt="Mesa TPV"
+                                style="display: block; margin-top: 10px;">
+                        </li>
+                        <li>
+                            <p>Si seleccionamos una de las mesas podemos hacerle la cuenta con el método de pago que van a utilizar para pagar todos los productos que han pedido y cuánto han pagado para saber cuánto tenemos que devoloverle/s</p> <br />
+
+                            <p>Esto genera un ticket con la factura el cual puedes imprimir, y tiene el siguiente formato</p>
+                            <img src="assets/imageneTPV/facturatpv.png" alt="Mesa TPV"
+                                style="display: block; margin-top: 10px;">
+                        </li>
+                    </ol>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
@@ -204,9 +272,11 @@
                     <div class="col-lg-3 col-md-5 col-12">
                         <div class="f-about single-footer">
                             <div class="logo">
-                                <a href="index.html"><img src="assets/images/iconoBootStrap.png" alt="Logo"></a>
+                                <a href="index.html">
+                                    <img src="assets/images/iconoBootStrap.png" alt="Logo">
+                                </a>
                             </div>
-                            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry standard.</p>
+                            <p>Somos dos estudiantes de DAM apasionados por el desarrollo de software y el diseño web. Este proyecto refleja nuestro aprendizaje y dedicación en cada detalle.</p>
                             <div class="footer-social">
                                 <ul>
                                     <li><a href="#" aria-label="Facebook"><i class="lni lni-facebook-filled"></i></a></li>
@@ -219,15 +289,15 @@
                         </div>
                     </div>
                     <!-- End About Section -->
-    
+
                     <!-- Links Section -->
                     <div class="col-lg-5 col-md-7 col-12">
                         <div class="row">
                             <div class="col-lg-6 col-md-6 col-6">
                                 <div class="single-footer f-link">
-                                    <h3>Company</h3>
+                                    <h3>Compañías</h3>
                                     <ul>
-                                        <li><a href="#">About Company</a></li>
+                                        <li><a href="#">Sobre Nosotros</a></li>
                                         <li><a href="https://www.hummel.es/">HUMMEL</a></li>
                                         <li><a href="https://www.macron.com/es">MACRON</a></li>
                                         <li><a href="https://www.adidas.es/">ADIDAS</a></li>
@@ -238,8 +308,7 @@
                             </div>
                             <div class="col-lg-6 col-md-6 col-6">
                                 <div class="single-footer f-contact f-link">
-                                    <h3>Contact Us</h3>
-                                    <p>Feel free to reach out to us at any time:</p>
+                                    <h3>Contáctanos</h3>
                                     <ul class="footer-contact">
                                         <li><i class="lni lni-phone"></i> <a href="#">+34 666 777 555</a></li>
                                         <li><i class="lni lni-envelope"></i> <a href="mailto:daniel.maguesin.perez.alu@iesjulioverne.es">support@yourmail.com</a></li>
@@ -251,18 +320,18 @@
                         </div>
                     </div>
                     <!-- End Links Section -->
-    
+
                     <!-- Instagram Section -->
                     <div class="col-lg-4 col-md-6 col-12">
                         <div class="single-footer gallery">
-                            <h3>Instagram Feed</h3>
+                            <h3>Instagram</h3>
                             <ul class="list">
-                                <li><a href="#" aria-label="Instagram post 1"><img src="assets/images/cibao.jpeg" alt="Cibao"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#" aria-label="Instagram post 2"><img src="assets/images/cadizCF.jpg" alt="Cádiz CF"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#" aria-label="Instagram post 3"><img src="assets/images/betisVisitante.jpg" alt="Betis"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#" aria-label="Instagram post 4"><img src="assets/images/camisetaBarsa.jpg" alt="Barcelona"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#" aria-label="Instagram post 5"><img src="assets/images/realMadrid.jpg" alt="Real Madrid"><i class="lni lni-instagram"></i></a></li>
-                                <li><a href="#" aria-label="Instagram post 6"><img src="assets/images/malaga.png" alt="Málaga"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/cibao.jpeg" alt="Cibao"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/cadizCF.jpg" alt="Cádiz CF"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/betisVisitante.jpg" alt="Betis"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/camisetaBarsa.jpg" alt="Barcelona"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/realMadrid.jpg" alt="Real Madrid"><i class="lni lni-instagram"></i></a></li>
+                                <li><a href="#"><img src="assets/images/malaga.png" alt="Málaga"><i class="lni lni-instagram"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -271,7 +340,7 @@
             </div>
         </div>
         <!-- End Footer Middle -->
-    
+
         <!-- Start Footer Bottom -->
         <div class="footer-bottom">
             <div class="container">
@@ -282,9 +351,9 @@
                                 <p>Designed and Developed by <a href="https://www.instagram.com/new.danielmp_05/" rel="nofollow" target="_blank">Daniel Maguesin</a></p>
                             </div>
                         </div>
-                        <div class="col-lg-6 col-md-6 col-12">
+                        <div class="col-lg-6 col-md-6 col-12 text-right">
                             <div class="right">
-                                <p>All Rights Reserved | Design By DAM</p>
+                                <p>&copy; 2024 Todos los Derechos Reservados | Proyecto DAM</p>
                             </div>
                         </div>
                     </div>
